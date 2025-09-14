@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Happy Birthday ❤</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Preloader / Tap to Start for mobile autoplay -->
+  <div id="starter" class="starter">
+    <div class="starter-card">
+      <h1>Tap to Start the Surprise</h1>
+      <button id="startBtn">Start 🎉</button>
+    </div>
+  </div>
+
+  <!-- Falling hearts layer -->
+  <div id="hearts"></div>
+
+  <!-- Countdown -->
+  <div id="countdown" class="center">
+    <h1 class="title">Countdown to Rikita's Birthday 🎂</h1>
+    <div id="timer" class="timer">Loading...</div>
+  </div>
+
+  <!-- Letter Section -->
+  <div id="letter" class="hidden center">
+    <div class="letter-box">
+      <p id="typedText"></p>
+    </div>
+  </div>
+
+  <!-- Balloons -->
+  <div id="balloons" class="hidden"></div>
+
+  <!-- Gallery -->
+  <section id="gallery" class="hidden container">
+    <h2 class="section-title">Memories ❤</h2>
+    <div class="gallery-grid">
+      <img src="images/1.jpg" alt="Memory with Riki 1" />
+      <img src="images/2.jpg" alt="Memory with Riki 2" />
+      <img src="images/3.jpg" alt="Memory with Riki 3" />
+      <img src="images/4.jpg" alt="Memory with Riki 4" />
+      <img src="images/5.jpg" alt="Memory with Riki 5" />
+      <img src="images/6.jpg" alt="Memory with Riki 6" />
+      <img src="images/7.jpg" alt="Memory with Riki 7" />
+      <img src="images/8.jpg" alt="Memory with Riki 8" />
+      <img src="images/9.jpg" alt="Memory with Riki 9" />
+      <img src="images/10.jpg" alt="Memory with Riki 10" />
+      <img src="images/11.jpg" alt="Memory with Riki 11" />
+      <img src="images/12.jpg" alt="Memory with Riki 12" />
+      <img src="images/13.jpg" alt="Memory with Riki 13" />
+      <img src="images/14.jpg" alt="Memory with Riki 14" />
+      <img src="images/15.jpg" alt="Memory with Riki 15" />
+      <img src="images/16.jpg" alt="Memory with Riki 16" />
+      <img src="images/17.jpg" alt="Memory with Riki 17" />
+      <img src="images/18.jpg" alt="Memory with Riki 18" />
+      <img src="images/19.jpg" alt="Memory with Riki 19" />
+      <img src="images/20.jpg" alt="Memory with Riki 20" />
+      <img src="images/21.jpg" alt="Memory with Riki 21" />
+      <img src="images/22.jpg" alt="Memory with Riki 22" />
+      <img src="images/23.jpg" alt="Memory with Riki 23" />
+      <img src="images/24.jpg" alt="Memory with Riki 24" />
+      <img src="images/25.jpg" alt="Memory with Riki 25" />
+      <img src="images/26.jpg" alt="Memory with Riki 26" />
+      <img src="images/27.jpg" alt="Memory with Riki 27" />
+      <img src="images/28.jpg" alt="Memory with Riki 28" />
+      <img src="images/29.jpg" alt="Memory with Riki 29" />
+      <img src="images/30.jpg" alt="Memory with Riki 30" />
+    </div>
+  </section>
+
+  <!-- Final Surprise Button -->
+  <button id="finalSurpriseBtn" class="reveal-btn hidden" style="margin: 32px auto; display: block;">
+    Ready for Final Surprise?
+  </button>
+
+  <!-- Surprise Reveal -->
+  <div id="surprise" class="hidden center">
+    <div id="proposalQuestion" class="hidden">
+      <h2>💍 Rikita, you are my forever. Will you marry me? 💍</h2>
+    </div>
+    <div id="proposalBtns" class="hidden">
+      <button id="yesBtn" class="reveal-btn">💖 Yes</button>
+      <button id="noBtn" class="reveal-btn">No</button>
+    </div>
+    <div id="finalMessage" class="final-message hidden">
+      <div id="extraSurprise" style="margin-top:20px;font-size:1.5rem;text-align:center;">
+        🎉 Surprise! You said YES! 🎉<br>
+        <span style="font-size:2.2rem;">💍💖 Forever Starts Now! 💖💍</span>
+        <p class="signature">— Maity</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cake Animation & Big Message -->
+  <div id="cakeSection" class="center hidden">
+    <div class="cake-anim">
+      <div class="cake">
+        <div class="plate"></div>
+        <div class="layer layer-bottom"></div>
+        <div class="layer layer-middle"></div>
+        <div class="layer layer-top"></div>
+        <div class="icing"></div>
+        <div class="candle">
+          <div class="flame"></div>
+        </div>
+      </div>
+      <h1 class="big-birthday">Happy Birthday Riki 🎂</h1>
+    </div>
+  </div>
+
+  <!-- Background Music -->
+  <audio id="bgMusic" src="music.mp3" preload="auto"></audio>
+
+  <!-- confetti library (browser build) -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
